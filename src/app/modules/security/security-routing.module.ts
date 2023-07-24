@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from '../main/main.component';
 import { LoginComponent } from './login/login.component';
 import { SecurityComponent } from './security.component';
+import { RegisterComponent } from './register/register.component';
 
 const routes: Routes = [
   {
@@ -11,7 +12,7 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: '/security', pathMatch: 'full' },
       { path: 'login', component: LoginComponent },
-      // { path: 'search-patient-id', component: SearchPatientIdComponent },
+      { path: 'register', component: RegisterComponent },
     ]
   }
 ];

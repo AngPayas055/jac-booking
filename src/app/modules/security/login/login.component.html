@@ -1,5 +1,11 @@
-<p>login security works!</p>
 
-<div class="card flex justify-content-center">
-    <p-button label="Check" icon="pi pi-check"></p-button>
+<div class="cont-login">                
+    <input type="text"  placeholder="Email" pInputText class="inp-login"/>
+    <input type="password"  placeholder="Password" pInputText  class="inp-login"/>
+    <span class="btn-fullwidth">
+        <p-button label="Log In"  class="btn-submit"></p-button>
+    </span>
+    <span class="btn-reg-cont">
+        <p-button  routerLink="/security/register" label="Create new account"  class="btn-register"  styleClass="p-button-success"></p-button>
+    </span>
 </div>

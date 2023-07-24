@@ -1,0 +1,14 @@
+.full-height{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.wrapper-login{
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+}
+.cont-title{
+    margin: 0 50px;
+}
