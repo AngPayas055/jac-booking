@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'main/login', pathMatch: 'full' },
-  // { path: 'security', loadChildren: () => import('./modules/security/security.module').then(m => m.SecurityModule) },
+  { path: '', redirectTo: 'security/login', pathMatch: 'full' },
+  { path: 'security', loadChildren: () => import('./modules/security/security.module').then(m => m.SecurityModule) },
   { path: 'main', loadChildren: () => import('./modules/main/main.module').then(m => m.MainModule) },
 ];
 

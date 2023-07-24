@@ -7,10 +7,12 @@ import { MainComponent } from './modules/main/main.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ButtonModule } from 'primeng/button';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SecurityComponent } from './modules/security/security.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SecurityComponent
     // MainComponent,
     // SecurityComponent
   ],
