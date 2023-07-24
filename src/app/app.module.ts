@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './modules/main/main.component';
 import { SecurityComponent } from './modules/security/security.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ButtonModule } from 'primeng/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ButtonModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

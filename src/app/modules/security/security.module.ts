@@ -5,6 +5,8 @@ import { SecurityRoutingModule } from './security-routing.module';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { SecurityComponent } from './security.component';
+import { ButtonModule } from 'primeng/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { SecurityComponent } from './security.component';
   ],
   imports: [
     CommonModule,
-    SecurityRoutingModule
+    SecurityRoutingModule,
+    ButtonModule,
+    BrowserAnimationsModule
   ]
 })
 export class SecurityModule { }
