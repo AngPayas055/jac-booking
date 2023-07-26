@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './main.component';
-import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
   {
@@ -9,7 +8,7 @@ const routes: Routes = [
     component: MainComponent,
     children: [
       { path: '', redirectTo: '/main', pathMatch: 'full' },
-      { path: 'login', component: LoginComponent },
+      // { path: 'login', component: LoginComponent },
       // { path: 'search-patient-id', component: SearchPatientIdComponent },
     ]
   }
