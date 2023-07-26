@@ -14,3 +14,15 @@
     margin: 0 auto;
 
 }
+.inp-login-half{
+    width: calc(50% - 5px);
+    margin-bottom: 15px;
+}
+.two-input-cont{
+    display: flex;
+    justify-content:space-between
+}
+.bday-gender-cont{
+    display: flex;
+    justify-content: space-between;
+}

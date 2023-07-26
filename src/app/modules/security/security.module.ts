@@ -6,7 +6,10 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ButtonModule } from 'primeng/button';
 import { InputTextModule } from 'primeng/inputtext';
-
+import { TreeSelectModule } from 'primeng/treeselect';
+import { DropdownModule } from 'primeng/dropdown';
+import { CalendarModule } from 'primeng/calendar';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,11 @@ import { InputTextModule } from 'primeng/inputtext';
     CommonModule,
     SecurityRoutingModule,
     ButtonModule,
-    InputTextModule
+    InputTextModule,
+    TreeSelectModule,
+    DropdownModule,
+    CalendarModule,
+    FormsModule
   ]
 })
 export class SecurityModule { }

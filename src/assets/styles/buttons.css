@@ -10,3 +10,11 @@
     border-top: 3px solid var(--bg-primary);
     margin-top: 15px;
 }
+.btn-reg-cont-space-between{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-top: 3px solid var(--bg-primary);
+    margin-top: 15px;
+}
