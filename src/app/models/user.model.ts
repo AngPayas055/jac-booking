@@ -10,3 +10,7 @@ export class RegistrationModel {
     LastName:  string = "";
     Gender:  string = "";
 }
+export class LoginModel {
+    Password:  string = "";
+    Email: string = "";   
+}

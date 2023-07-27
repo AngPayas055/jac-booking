@@ -10,6 +10,7 @@ import { TreeSelectModule } from 'primeng/treeselect';
 import { DropdownModule } from 'primeng/dropdown';
 import { CalendarModule } from 'primeng/calendar';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FormsModule } from '@angular/forms';
     TreeSelectModule,
     DropdownModule,
     CalendarModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ]
 })
 export class SecurityModule { }

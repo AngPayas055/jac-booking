@@ -11,7 +11,7 @@
     </div>
     <input [(ngModel)]="user.Email" type="text"  placeholder="Email" pInputText class="inp-login p-inputtext-sm"/>         
     <div class="bday-gender-cont">
-        <p-dropdown [(ngModel)]="user.Gender" [options]="gender" optionLabel="name" ></p-dropdown>
+        <p-dropdown [(ngModel)]="user.Gender" [options]="gender" optionLabel="name" optionValue="name"></p-dropdown>
         <p-calendar [(ngModel)]="user.Birthday" placeholder="Birthday"></p-calendar>
     </div>
 

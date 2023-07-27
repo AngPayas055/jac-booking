@@ -1,9 +1,9 @@
 
 <div class="cont-login">                
-    <input type="text"  placeholder="Email" pInputText class="inp-login"/>
-    <input type="password"  placeholder="Password" pInputText  class="inp-login"/>
+    <input [(ngModel)]="user.Email" type="text"  placeholder="Email" pInputText class="inp-login"/>
+    <input [(ngModel)]="user.Password" type="password"  placeholder="Password" pInputText  class="inp-login"/>
     <span class="btn-fullwidth">
-        <p-button label="Log In"  class="btn-submit"></p-button>
+        <p-button label="Log In"  class="btn-submit" (onClick)="submit()"></p-button>
     </span>
     <span class="btn-reg-cont">
         <p-button  routerLink="/security/register" label="Create new account"  class="btn-register"  styleClass="p-button-success"></p-button>

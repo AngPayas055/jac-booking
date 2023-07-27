@@ -12,6 +12,8 @@ import { TreeSelectModule } from 'primeng/treeselect';
 import { DropdownModule } from 'primeng/dropdown';
 import { CalendarModule } from 'primeng/calendar';
 import { FormsModule } from '@angular/forms';
+import { AppSettings } from './app-settings';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,9 +29,10 @@ import { FormsModule } from '@angular/forms';
     TreeSelectModule,
     DropdownModule,
     CalendarModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [AppSettings],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

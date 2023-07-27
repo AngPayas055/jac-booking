@@ -16,4 +16,8 @@ export class UserService {
   public async RegisterUserWithLock(objUser: any) {
     return this.httpClient.post(this.appSettings.APIURLHost + '/api/Registration/registration', JSON.stringify(objUser), this.appSettings.publicOptions);
   }
+  
+  public async Login(objUser: any) {
+    return this.httpClient.post(this.appSettings.APIURLHost + '/api/Registration/login', JSON.stringify(objUser), this.appSettings.publicOptions);
+  }
 }

@@ -1,7 +1,7 @@
 import { HttpHeaders } from "@angular/common/http";
 import { environment } from "src/environments/environment";
 
-const default_api_url = 'https://localhost:44354';
+const default_api_url = 'https://localhost:7198';
 // const default_api_url = 'http://192.168.0.102:8081';
 
 export class AppSettings {
@@ -20,6 +20,13 @@ export class AppSettings {
         headers: new HttpHeaders({
             'Content-Type': 'application/json',
             'Authorization': 'Bearer ' + localStorage.getItem('access_token')
+        })
+    };
+    
+    public publicOptions: any = {
+        headers: new HttpHeaders({
+            'Content-Type': 'application/json',
+            'Accept':'application/json'
         })
     };
   }
