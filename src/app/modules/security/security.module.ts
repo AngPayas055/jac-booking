@@ -11,6 +11,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { CalendarModule } from 'primeng/calendar';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ToastModule } from 'primeng/toast';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     DropdownModule,
     CalendarModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ToastModule
   ]
 })
 export class SecurityModule { }
