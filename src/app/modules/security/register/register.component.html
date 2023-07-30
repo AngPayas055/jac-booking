@@ -6,7 +6,7 @@
         <input [(ngModel)]="user.LastName" type="text"  placeholder="Last name" pInputText class="inp-login-half p-inputtext-sm"/>
     </div>
     <div class="two-input-cont">
-        <input [(ngModel)]="user.Password" type="password"  placeholder="New password" pInputText class="inp-login-half p-inputtext-sm"/>    
+        <input [(ngModel)]="user.Password" required minlength="7" type="password"  placeholder="New password" pInputText class="inp-login-half p-inputtext-sm"/>    
         <input [(ngModel)]="user.Phone" type="text"  placeholder="Mobile number" pInputText class="inp-login-half p-inputtext-sm"/>  
     </div>
     <input [(ngModel)]="user.Email" type="text"  placeholder="Email" pInputText class="inp-login p-inputtext-sm"/>         

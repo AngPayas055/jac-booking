@@ -72,4 +72,13 @@ export class RegisterComponent {
       }
     )
   }
+  fieldValidation(){
+    if (this.user.FirstName.length <= 6){
+      this.message.add({
+        severity: 'error',
+        summary: 'Error',
+        detail: ""});
+
+    }
+  }
 }
