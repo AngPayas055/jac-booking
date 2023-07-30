@@ -16,8 +16,6 @@ export class LoginComponent {
     private userService: UserService,
     private router: Router,
     private message: MessageService
-    // private router: Router,
-    // private message: MessageService
     ) { }
   user: LoginModel = {
     Password: "",
@@ -34,18 +32,14 @@ export class LoginComponent {
             severity: 'error',
             summary: 'Error',
             detail: result.message});
-          // setTimeout(() => {
-          //   this.router.navigate(['/security/login']);
-          // }, 1000);
-
         }else{
           this.message.add({
             severity: 'success',
             summary: 'Success',
             detail: result.message});
-          // setTimeout(() => {
-          //   this.router.navigate(['/security/login']);
-          // }, 1000);
+          setTimeout(() => {
+            this.router.navigate(['/admin/dashboard']);
+          }, 1000);
 
         }
       },

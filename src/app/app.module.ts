@@ -14,11 +14,13 @@ import { CalendarModule } from 'primeng/calendar';
 import { FormsModule } from '@angular/forms';
 import { AppSettings } from './app-settings';
 import { HttpClientModule } from '@angular/common/http';
+import { AdminComponent } from './modules/admin/admin.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SecurityComponent
+    SecurityComponent,
+    AdminComponent
   ],
   imports: [
     BrowserModule,
