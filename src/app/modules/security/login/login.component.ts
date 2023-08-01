@@ -36,7 +36,7 @@ export class LoginComponent {
           this.message.add({
             severity: 'success',
             summary: 'Success',
-            detail: result.message});
+            detail: "Login Success"});
           setTimeout(() => {
             this.router.navigate(['/admin/dashboard']);
           }, 1000);
